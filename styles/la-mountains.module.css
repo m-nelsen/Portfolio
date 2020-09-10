@@ -1,0 +1,455 @@
+/* General */
+
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap);
+
+.laMountains{
+    font-family: 'Oswald', sans-serif;
+}
+
+.backgroundCover{
+    background-position: center top;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.contentMargin{
+    padding: 0 15%;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+}
+
+.headerContainer > h2{
+    color: #637e94;
+    font-size: 10rem;
+}
+
+.headerContainer > h3{
+    height: 50px;
+    color: #404f6c;
+    font-size: 2.5rem;
+    position: relative;
+    bottom: -1.1rem;
+    right: 1.7rem;
+}
+
+/* Navbar */
+
+.navbar{
+    min-height: 60px;
+    height: 7vh;
+    background-color: #61759e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+    z-index: 5;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.5);
+}
+
+.navbarRelative{
+    height: 7vh;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+    z-index: 5;
+}
+
+.navbarRelative > img:nth-of-type(1){
+    margin: 0 15px 0 30px;
+}
+
+.navbarRelative > a{
+    color: white;
+    margin-left: 20px;
+}
+
+.navSpacer{
+    flex-grow: 1;
+}
+
+.navbar > img:nth-of-type(1){
+    margin: 0 15px 0 30px;
+}
+
+.navbar > a{
+    color: #404f6c;
+    margin-left: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Landing */
+
+.bg1{
+    background-image: url(../public/img/la-mountains/background.webp);
+}
+
+/* History */
+
+.historyParagraph{
+    margin: 0 7%;
+    font-size: 1.3em;
+    padding: 0 15%;
+    font-weight: 300;
+}
+
+.bg2{
+    background-image: url(../public/img/la-mountains/background2.webp);
+    display: flex;
+    flex-direction: column;
+}
+
+.historyContainer > .headerContainer{
+    padding: 0 15%;
+}
+
+/* Carousel */
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.activeImg{
+    display: flex;
+    transition: .3s;
+}
+
+.inactiveImg{
+    display: none;
+    transition: .3s;
+}
+
+.carouselOverlay{
+    width:100%;
+    height:100%;
+    padding-top: 20px;
+    z-index: 3;
+    background-color: rgba(97,117,158, .65);
+}
+
+/* Climb */
+
+.climbSection{
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 1.3em;
+    padding: 0 18%;
+    background-color: #61759e;
+}
+
+.climbSection > p{
+    padding: 0 40px;
+    font-weight: 300;
+}
+
+.climbHeader > h2{
+    color: #506285;
+}
+
+/* Tabs */
+
+.tabs{
+    background-color: #404f6c;
+    min-height: 4vh;
+}
+
+.tabList { 
+    display: flex;
+    padding: 0 15%;
+}
+
+.tabContent{
+    min-height: 100vh;
+    width: 100%;
+}
+  
+.tabListItem{
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    padding: 0 2rem;
+    color: #b0b4be;
+    font-size: 1.7em;
+    transition: .2s;
+}
+  
+.tabListActive{
+    background-color: #b0b4be;
+    color: #404f6c;
+    text-decoration: underline;
+    transform: scaleY(2) translateY(5px);
+}
+
+.tabListActive > span{
+    transform: scaleY(.5) translateY(-8px);
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.bg3{
+    background-image: url(../public/img/la-mountains/background3.webp);
+}
+
+.bg4{
+    background-image: url(../public/img/la-mountains/background4.webp);
+}
+
+/* Schedule */
+
+.scheduleSpacer{
+    padding: 100px 0 0 20%;
+}
+
+.scheduleContainer{
+    min-width: 400px;
+    max-width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+
+.scheduleContainer > h4{
+    color: #404f6c;
+    font-size: 2.5em;
+}
+
+.scheduleContainer p{
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+/* Footer */
+
+.myFooter{
+    height: 7vh;
+    width: 100%;
+    position: relative;
+    background-color: #61759e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15%;
+}
+
+.myFooter > img:nth-of-type(1){
+    margin: 0 15px 0 30px;
+}
+
+.myFooter > img:nth-of-type(2){
+    filter: brightness(0) invert(1);
+}
+
+.myFooter > p{
+    color: white;
+}
+
+.footerOverlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 2;
+    background-color: rgba(24,36,67, .85);
+}
+
+@media screen and (max-width: 1400px){
+    .navbar{
+        padding: 0 8%;
+    }
+    
+    .navbarRelative{
+        padding: 0 8%;
+    }
+
+    .bg2{
+        align-items: center;
+    }
+
+    .historyContainer > .headerContainer{
+        padding: 0;
+    }
+
+    .historyContainer{
+        display: flex;
+        margin: 0 8%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .historyParagraph{
+        padding: 0;
+        margin: 0 7% 0 0;
+        font-size: 1.2rem;
+    }
+
+    .climbSection{
+        padding: 0;
+    }
+
+    .climbSection > .headerContainer{
+        margin: 0 6%;
+    }
+
+    .climbSection > p{
+        padding: 0;
+        margin-right: 6%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .headerContainer > h2{
+        font-size: 8rem;
+    }
+
+    .headerContainer > h3{
+        font-size: 2rem;
+        right: 1.4rem;
+    }
+
+    .historyContainer{
+        flex-direction: column;
+    }
+
+    .historyParagraph{
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 20px 40px;
+        margin: 0 0 40px 0;
+    }
+
+    .climbSection{
+        flex-direction: column;
+    }
+
+    .climbSection > p{
+        margin: 0 15% 40px 15%;
+        font-size: 1.2rem;
+    }
+
+    .tabListItem{
+        font-size: 1.4em;
+    }
+
+    .scheduleSpacer{
+        padding: 0 0 20% 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myFooter{
+        padding: 30px 8%;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .navbar{
+        padding: 30px 20px 30px 1%;
+    }
+    
+    .navbarRelative{
+        padding: 30px 20px 30px 1%;
+    }
+
+    .navbarRelative > img:nth-of-type(1){
+        width: 40px;
+        height: auto;
+        margin: 5px 5px;
+    }
+    
+    .navbar > img:nth-of-type(1){
+        width: 40px;
+        height: auto;
+        margin: 5px 5px;
+    }
+
+    .navbar > img:nth-of-type(2){
+        width: 85px;
+        height: auto;
+    }
+
+    .navbar > a{
+        font-size: .9rem;
+    }
+
+    .navbarRelative > a{
+        font-size: .9rem;
+    }
+
+    .bg1{
+        background-image: url(../public/img/la-mountains/background_mobile.webp);
+        background-position: center;
+    }
+
+    .tabList{
+        padding: 0 2%;
+        justify-content: center;
+    }
+
+    .tabListItem{
+        font-size: 1.2rem;
+        padding: 0 20px;
+    }
+
+    .scheduleSpacer{
+        padding-bottom: 40%;
+    }
+
+    .myFooter{
+        padding: 30px 1%;
+    }
+
+    .myFooter > img:nth-of-type(1){
+        width: 40px;
+        height: auto;
+        margin: 5px 5px;
+    }
+    
+    .myFooter > img:nth-of-type(2){
+        width: 80px;
+        height: auto;
+    }
+    
+    .myFooter > p{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .bg1{
+        background-position: -200px 0px;
+    }
+}
